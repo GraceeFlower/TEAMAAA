@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .flex{
+            width:200px;
+            display: flex;
+        }
+        .flex-item1{
+            width: 100px;
+            flex-shrink: 0;    
+        
+        }
+        .flex-item2{
+            width: 100px;
+            flex-shrink: 2;    
+        }
+        .flex-item3{
+            width: 100px;
+            flex-shrink: 3;    
+        }
+        .round{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: yellowgreen;
+        }
+        #colorDiv {
+            width: 50px;
+            height: 50px;        
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="flex-item1">1</div>
+        <div class="flex-item2">2</div>
+        <div class="flex-item3">3</div>
+    </div>
+    <div class="round"></div>
+    <div id="colorDiv"></div>
+    <script>
+        let colorDiv = document.getElementById('colorDiv');
+        //let color = colorDiv.style.backgroundColor;
+        function red() {
+            colorDiv.style.backgroundColor = 'red';
+            console.log(new Date())
+        }
+        function green() {
+            colorDiv.style.backgroundColor = 'green';
+            console.log(new Date())
+        }
+        function yellow() {
+            colorDiv.style.backgroundColor = 'yellow';
+            console.log(new Date())
+        }
+        
+        
+        var light = function(cb, timer) {
+            return new Promise(function(resolve, reject) {
+                setTimeout(function() {
+                    cb();
+                    resolve();
+                }, timer);
+            });
+        };
+        var step = function() {
+            Promise.resolve().then(function() {
+                return light(red, 1000);
+            }).then(function() {
+                return light(yellow, 2000);
+            }).then(function() {
+                return light(green, 1000);
+            }).then(function() {
+                return light(yellow, 3000);
+            }).then(function() {
+                step();
+            });
+        }
+        step();
+    </script>
+</body>
+</html>
