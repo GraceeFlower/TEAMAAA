@@ -17,6 +17,7 @@ body {
   height: 100%;
   float: left;
   margin-left: 10px;
+  background-color: white;
 }
 
 .nav-tip {
@@ -45,5 +46,5 @@ body {
 }
 
 .sub {
-  color: rgb(144, 144, 144);;
+  color: gray;
 }
