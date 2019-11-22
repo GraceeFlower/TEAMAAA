@@ -79,39 +79,44 @@
         display: inline-block;
         padding: 0 30px 0 0;
       }
-      .Album {
-        height: 100%;
+      .album {
+        height: 200px;
         border-bottom-style: dashed;
         border-bottom-color: #000;
         border-bottom-width: thin;
       }
-      .Album-description {
+      .album-description {
         float: right;
         width: 65%;
         height: 100%;
-        margin: 0 10px;
         font-family: Arial, Helvetica, sans-serif;
       }
-      .Album-description h3 {
+      .album-description h3 {
         font-family: monospace;
         color: #000;
         font-size: x-large;
         font-weight: bolder;
       }
-      .Album-description h4 {
+      .album-description h4 {
         font-family: cursive;
         color: #000;
         font-size: small;
         font-weight: lighter;
       }
-      .Album-description p {
+      .album-description p {
         font-family: monospace;
         color: #000;
         font-size: normal;
         font-weight: bold;
       }
-      .Album-cover {
-        display: inline;
+      .album-cover {
+        float: left;
+        width: 35%;
+        height: 100%;
+        text-align: center;
+      }
+      .album-cover > img {
+        margin-top: 25px;
       }
     </style>
 </head>
@@ -191,12 +196,12 @@
     </div>
   </div>
   <div class="right">
-      <div class="Album" >
-        <div class="Album-cover">
-          <img src="../static/img/cover1.jpg"class="Album-cover" alt="魔杰座" width="250" height="200">
+      <div class="album" >
+        <div class="album-cover">
+          <img src="../static/img/cover1.jpg" alt="魔杰座" width="200" height="150">
         </div>
-        <div class="Album-description">
-          <h3>魔杰座</h3>
+        <div class="album-description">
+          <h3>Magic Jiezuo</h3>
           <h4>22/11/2019</h4>
           <p>
             《魔杰座》是周杰伦2008年发行的专辑。作词者包括周杰伦、方文山、黄俊郎等人，编曲者包括钟兴民、林迈可、黄雨勋等人。
@@ -206,12 +211,12 @@
           </a>
         </div>
       </div>
-      <div class="Album">
-        <div class="Album-cover">
-          <img src="../static/img/cover2.jpg" alt="七里香" width="250" height="200">
+      <div class="album">
+        <div class="album-cover">
+          <img src="../static/img/cover2.jpg" alt="七里香" width="200" height="150">
         </div>
-        <div class="Album-description">
-            <h3>七里香</h3>
+        <div class="album-description">
+            <h3>Seven Feets Soundly</h3>
             <h4>22/11/2019</h4>
             <p>
               《七里香》是周杰伦于2004年8月3日发行的专辑。该专辑的制作人由周杰伦担任，共收录了10首歌曲。
@@ -221,11 +226,12 @@
             </a>
           </div>
       </div>
-      <div class="Album">
-        <div class="Album-cover">
-            <img src="../static/img/cover3.jpg" alt="十一月的肖邦" width="250" height="200">
-        <div class="Album-description">
-            <h3>十一月的肖邦</h3>
+      <div class="album">
+        <div class="album-cover">
+            <img src="../static/img/cover3.jpg" alt="十一月的肖邦" width="200" height="150">
+        </div>
+        <div class="album-description">
+            <h3>November's Chopin</h3>
             <h4>22/11/2019</h4>
             <p>
               《11月的萧邦》是周杰伦于2005年11月1日发行的音乐专辑，共收录12首歌曲，由周杰伦担任专辑制作人。
@@ -233,7 +239,6 @@
             <a href="https://www.baidu.com/link?url=3-4vuoNKayG8D8QKz8z8AZTji4QtzesvtQk1gq2zrH-_ff2xVQtk-q3HJypi3z_G9hWiwK86ZHaYO6IpRF8Da8taxpuLOlbnB_vqNAeCDa8etZiHu34PRkTWrMMHLP8K_j85Qg_rPJxoevdURtuBM9PnsbTSFninvUrwa9Lk_6FTU1rnwpZXlf2eB5Nsn4evNrO5dvwmGOk1NNX71ZcYrQKefBjjMcszcBL4AlA9D5S&wd=&eqid=b10cf0860000bd66000000025dd77505">
             Read More
             </a>
-        </div>
         </div>
       </div>
   </div>
