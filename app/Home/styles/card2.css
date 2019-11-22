@@ -1,0 +1,47 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid rgba(144, 144, 144, 0.2);
+}
+
+.menu {
+  border: 0;
+  height: 100%;
+  float: left;
+  margin-left: 10px;
+}
+
+.nav-tip {
+  /* margin-left: 500px; */
+  float: left;
+  line-height: 10px;
+  color: rgb(144, 144, 144);
+}
+
+.user {
+  margin: 5px 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: url(../static/img/profile.jpg);
+  background-size: contain;
+  float: right;
+}
+
+.vedio {
+  margin: 50px 300px;
+}
+
+.vedio-title {
+  margin: 5px 0;
+}
+
+/* .vedio h6 {
+  margin: 5px 0;
+} */
