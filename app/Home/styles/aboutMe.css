@@ -27,6 +27,10 @@ body {
     margin-top: -150px;
     z-index: 10;
     background-color:white;
+
+    position: absolute;
+    animation:bounceInDown 2s ;
+    -webkit-animation:bounceInDown 2s ;
   }
 
   .icon-guanbi {
@@ -83,3 +87,117 @@ body {
   .tl a, .address a {
     text-decoration: none;
   }
+
+
+
+  #close-button-l {
+    position: absolute;
+    left: 59%;
+    top: 20%;
+    z-index: 12;
+  }
+
+  #close-button {
+    position: absolute;
+    top :0;
+    margin:0;
+  }
+
+  #close-button:checked~#card-show-l
+  {
+
+      animation:mymove 2s ;
+      -webkit-animation:mymove 2s ;
+  }
+
+  @keyframes mymove
+  {
+    from {top:-1000px;}
+    to {top:50%;}
+  }
+  
+  @-webkit-keyframes mymove 
+  {
+    from {top:-1000px;}
+    to {top:130%;}
+  }
+  
+  @keyframes bounceInDown {
+      from,
+      60%,
+      75%,
+      90%,
+      to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+    
+      0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+      }
+    
+      60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+      }
+    
+      75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+      }
+    
+      90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+      }
+    
+      to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  .bounceInDown {
+      -webkit-animation-name: bounceInDown;
+      animation-name: bounceInDown;
+    }
+    
+    @-webkit-keyframes bounceInLeft {
+      from,
+      60%,
+      75%,
+      90%,
+      to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+    
+      0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+      }
+    
+      60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+      }
+    
+      75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+      }
+    
+      90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+      }
+    
+      to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
