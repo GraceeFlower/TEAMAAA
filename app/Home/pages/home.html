@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="../styles/iconfont.css">
     <style>
       body {
-        margin: 0; 
+        margin: 0;
         padding: 0; 
       }
+
       .left {
         background-image: url(../static/img/cover.jpg);
         position: fixed;
@@ -16,12 +17,19 @@
         height: 100%;
         background-size: cover
       }
+
       .right {
         float:right;
         width:65%;
         height:100%;
         background-color:white;
       }
+
+      .right a {
+        text-decoration-line: none;
+        color: #15adf3;
+      }
+
       .photo {
         border: 1px solid #fff;
         background-image: url(../static/img/profile.jpg);
@@ -33,16 +41,19 @@
         margin: auto;
         background-size: contain;
       }
+
       .profile {
         text-align: center;
         margin: 80px 0 18px 0;    
       }
+
       .name {
         text-align: center;
         color:white;
         font-family: fantasy;
         font-size: normal;
       }
+
       .story {
         color:whitesmoke;
         font-family: monospace;
@@ -50,82 +61,105 @@
         font-size: medium;
         margin: 0 50px;
       }
+
       .slag {
         margin: 0 30px;
       }
+
       .list li, .list-right li {
         height: 30px;
         line-height: 30px;
         list-style: none;
         margin: 16px 20px;
       }
+
       .list li a:hover, .list-right li a:hover {
         color: #000;
       }
+
       .list li > a > span {
         margin-right: 8px;
       }
+
       .list a, .list-right a {
         text-decoration-line: none;
         color:white;
         font-family: Georgia, 'Times New Roman', Times, serif;
       }
+
       .list {
         display: inline-block;
         padding: 0 0 0 30px; 
       }
+
       .list-right {
         float: right;
         display: inline-block;
         padding: 0 30px 0 0;
       }
+
       .album {
         height: 200px;
         border-bottom: 2px solid rgba(144, 144, 144, 0.2);
         margin: 20px;
       }
-      .album-description {
+
+      .album-cover {
+        float: left;
+        width: 35%;
+        height: 100%;
+        text-align: center;
+        
+      }
+      .album-cover img {
+        opacity: .7;
+        filter: blur(3px);
+      }
+
+      .album:hover .album-cover img {
+        opacity: 1;
+        filter: blur(0px);
+      }
+
+
+      .album-desc {
         float: right;
         width: 65%;
         height: 100%;
         font-family: Arial, Helvetica, sans-serif;
       }
-      .album-description h3 {
+
+      .album-desc h3 {
         font-family: monospace;
         color: #000;
         font-size: x-large;
         font-weight: bolder;
         margin-bottom: 10px;
       }
-      .album-description h4 {
+
+      .album-desc h4 {
         font-family: cursive;
         color: #000;
         font-size: small;
         font-weight: lighter;
       }
-      .album-description p {
+
+      .album-desc p {
         font-family: monospace;
         color: #000;
         font-size: normal;
         font-weight: bold;
-        margin-bottom: 45px;
+        margin-bottom: 35px;
       }
-      .album-cover {
-        float: left;
-        width: 35%;
-        height: 100%;
-        text-align: center;
-      }
+
       .album-cover > img {
         margin-top: 17px;
       }
-      .right a {
-        text-decoration-line: none;
-        color: #15adf3;
-      }
-      .album time {
+
+      time {
         color: grey;
       }
+
     </style>
 </head>
 <body>
@@ -206,68 +240,73 @@
   <div class="right">
       <div style="margin:20px; padding: 0 0 20px; border-bottom: 2px solid rgba(144, 144, 144, 0.2);">
           <div>
-              <h1  style="margin-bottom :0;  font-family: arial;"> welcome to  tranquilpeak</h1>
+              <h1 style="margin-bottom :0;  font-family: arial;"> Welcome to Jay Chou</h1>
           </div>
           <div>
-              <time style="color: grey;">Jun 15 2015 in tranquilpeak releases</time>
+              <time>18 January, 1979 in Taiwan, genius</time>
           </div>
           <div style="margin-bottom:20px">
-              <p style="  word-break:break-all;color:#2f2f4f;font-family:centaur"> tranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulietranqulie</p>
+              <p style="word-break:break-all;color:#2f2f4f;font-family:centaur"> 
+                Jay Chou, born on January 18, 1979 in Xinbei City, Taiwan Province, 
+                graduated from Danjiang middle school, male singer, musician, actor, 
+                director, screenwriter, etc. of Taiwan pop music in China.</p>
           </div>
           <div>
-              <a  href="./card2.html">Continue Reading</a>
-              <img   style=" margin-top:20px; max-width:100%;"  src="../static/img/city.jpg"  alt="city.jpg" align="TextTop"/>
+              <a href="./card2.html">Continue reading</a>
+              <img style=" margin-top:20px; max-width:100%;"  src="../static/img/city.jpg"  alt="city.jpg" align="TextTop"/>
           </div>
       </div>
       <div class="album" >
         <div class="album-cover">
-          <img src="../static/img/cover1.jpg" alt="魔杰座" width="200" height="150">
+          <img src="../static/img/cover1.jpg" alt="魔杰座" width="70%" height="150">
         </div>
-        <div class="album-description">
+        <div class="album-desc">
           <h3>Magic Jiezuo</h3>
           <time>22 November, 2019 in Xi'an, features</time>
           <p>
-            《魔杰座》是周杰伦2008年发行的专辑。作词者包括周杰伦、方文山、黄俊郎等人，编曲者包括钟兴民、林迈可、黄雨勋等人。
+            "Magic Jiezuo" is an album released by Jay Chou in 2008. The composers include Jay Chou, 
+            Fang Wenshan, Huang Junlang, etc.
           </p>
           <a href="./card2.html">
-          Continue  Reading
+            Continue  reading
           </a>
         </div>
       </div>
       <div class="album">
         <div class="album-cover">
-          <img src="../static/img/cover2.jpg" alt="七里香" width="200" height="150">
+          <img src="../static/img/cover2.jpg" alt="七里香" width="70%" height="150">
         </div>
-        <div class="album-description">
+        <div class="album-desc">
             <h3>Seven Feets Soundly</h3>
             <time>22 November, 2019 in Xi'an, features</time>
             <p>
-              《七里香》是周杰伦于2004年8月3日发行的专辑。该专辑的制作人由周杰伦担任，共收录了10首歌曲。
+              "Qilixiang" is an album released by Jay Chou on August 3, 2004. 
+              Jay Chou is the producer of the album, which includes 10 songs.
             </p>
             <a href="./card2.html">
-            Continue  Reading
+            Continue  reading
             </a>
           </div>
       </div>
       <div class="album">
         <div class="album-cover">
-            <img src="../static/img/cover3.jpg" alt="十一月的肖邦" width="200" height="150">
+            <img src="../static/img/cover3.jpg" alt="十一月的肖邦" width="70%" height="150">
         </div>
-        <div class="album-description">
+        <div class="album-desc">
             <h3>November's Chopin</h3>
             <time>22 November, 2019 in Xi'an, features</time>
             <p>
-              《11月的萧邦》是周杰伦于2005年11月1日发行的音乐专辑，共收录12首歌曲，由周杰伦担任专辑制作人。
+              "November's Chopin" is a music album released by Jay Chou on November 1, 2005. 
+              It contains 12 songs. Jay Chou is the producer of the album.
             </p>
             <a href="./card2.html">
-            Continue  Reading
+            Continue  reading
             </a>
         </div>
       </div>
   </div>
 </div>
 </body>
-<!-- <script>
-  alert('司莎莎是大神，不服就点取消，但是你只能点确定，因为你不得不服');
-</script> -->
+<!-- 园游会在这里哦，下面这行代码注释掉就ok  ^_^-->
+<iframe id="music" src= "http://aqqmusic.tc.qq.com/amobile.music.tc.qq.com/C400002smLy40ZZpNm.m4a?guid=500204211&vkey=6F5F4B05A14D2F4CBEB3AB59C2038F721A42D9BE554947388CFC6749561F5F411C84BC61B4E5C08BF6DC59EC3E0C46D2C858017EDCDD5A35&uin=0&fromtag=38" allow = "autoplay"/>
 </html>
