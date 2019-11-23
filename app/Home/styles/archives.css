@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #0b051f;
+}
+
+.tl-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 15% 100px 15%;
+}
+
+.tl-item.period {
+  padding: 50px 0 90px;
+  text-align: center;
+  /* overflow: hidden; */
+  /* attention!!!!!!!! */
+}
+
+.tl-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.period .tl-marker:before {
+  background: transparent;
+  content: "";
+  width: 15px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+  bottom: 30px;
+  position: absolute;
+  border-bottom: 3px solid #CCD5DB;
+}
+
+.period .tl-marker:after {
+  content: "";
+  height: 32px;
+  top: auto;
+}
+
+.tl-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15px;
+  left: 50%;
+  margin-left: -7.5px
+}
+
+.tl-marker:before {
+  background: #42d9e4;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 11px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 11px;
+}
+
+.tl-marker.tl-marker-o:before {
+  background: #0b051f;
+  border: 4px solid #42d9e4;
+  height: 9px;
+  top: 3px;
+  left: -1px;
+  width: 9px;
+}
+
+.tl-marker:after {
+  content: "";
+  width: 3px;
+  background: #CCD5DB;
+  display: block;
+  position: absolute;
+  top: 24px;
+  bottom: 0;
+  left: 6px;
+}
+
+.tl-item.period .tl-content {
+  float: none;
+  width: 100%;
+}
+
+.tl-title {
+  color: #42d9e4;
+  font-size: 1rem;
+}
+
+.tl-content {
+  color: #fff;
+}
+
+.tl-info, .tl-content {
+  width: 48%;
+}
+
+.tl-item .tl-title {
+  margin-top: 0;
+}
+
+.tl-gradient {
+  /* display: inline-block; */
+  background-image: linear-gradient(90deg, #bdf1f1, #2c97b8, #323ca8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+.tl-item:nth-child(odd) .tl-info {
+  float: left;
+  text-align: right;
+}
+.tl-item:nth-child(odd) .tl-content {
+  float: right;
+  /* text-align: left; */
+}
+.tl-item:nth-child(even) .tl-info {
+  float: right;
+  text-align: left;
+}
+.tl-item:nth-child(even) .tl-content {
+  float: left;
+  text-align: right;
+  padding-bottom: 50px;
+}
+
+
+
+.tl-item-last:after {
+  content: "";
+  background: transparent;
+  width: 15px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  left: calc(50% + -7.25px);
+  bottom: 0;
+  position: absolute;
+  border-bottom: 3px solid #CCD5DB;
+}
