@@ -92,30 +92,32 @@ body {
     padding: 0 30px 0 0;
 }
 
-
-.home-headline{
+.home-headline {
     margin:20px; 
     padding: 0 0 20px; 
     border-bottom: 2px solid rgba(144, 144, 144, 0.2);
 }
-.home-headline-title{
+
+.home-headline-title {
     margin-bottom :0;  
     font-family: arial;
 }
-.home-headline-content{
+
+.home-headline-content {
     margin-bottom:20px;
     word-break:break-all;
     color:#2f2f4f;
     font-family:centaur;
 }
-.home-headline-link{
+
+.home-headline-link {
     text-decoration:none;
 }
-.home-headline-image{
+
+.home-headline-image {
     margin-top:20px; 
     max-width:100%;
 }
-
 
 .album {
     height: 200px;
