@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jay</title>
+    <link rel="stylesheet" href="../styles/iconfont.css">
+    <style>
+      body {
+        margin: 0; 
+        padding: 0; 
+      }
+
+      .left {
+        background-image: url(../static/img/cover.jpg);
+        position: fixed;
+        width: 35%;
+        height: 100%;
+        background-size: cover
+      }
+
+      .right {
+        float:right;
+        width:65%;
+        height:100%;
+        background-color:white;
+      }
+
+      .right a {
+        text-decoration-line: none;
+        color: #15adf3;
+      }
+
+      .photo {
+        border: 1px solid #fff;
+        background-image: url(../static/img/profile.jpg);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position:relative;
+        top: 10%;
+        margin: auto;
+        background-size: contain;
+      }
+
+      .profile {
+        text-align: center;
+        margin: 80px 0 18px 0;    
+      }
+
+      .name {
+        text-align: center;
+        color:white;
+        font-family: fantasy;
+        font-size: normal;
+      }
+
+      .story {
+        color:whitesmoke;
+        font-family: monospace;
+        font-weight: lighter;
+        font-size: medium;
+        margin: 0 50px;
+      }
+
+      .slag {
+        margin: 0 30px;
+      }
+
+      .list li, .list-right li {
+        height: 30px;
+        line-height: 30px;
+        list-style: none;
+        margin: 16px 20px;
+      }
+
+      .list li a:hover, .list-right li a:hover {
+        color: #000;
+      }
+
+      .list li > a > span {
+        margin-right: 8px;
+      }
+
+      .list a, .list-right a {
+        text-decoration-line: none;
+        color:white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      .list {
+        display: inline-block;
+        padding: 0 0 0 30px; 
+      }
+
+      .list-right {
+        float: right;
+        display: inline-block;
+        padding: 0 30px 0 0;
+      }
+
+      .album {
+        height: 200px;
+        border-bottom: 2px solid rgba(144, 144, 144, 0.2);
+        margin: 20px;
+      }
+
+      .album-cover {
+        float: left;
+        width: 35%;
+        height: 100%;
+        text-align: center;
+      }
+
+      .album-description {
+        float: right;
+        width: 65%;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .album-description h3 {
+        font-family: monospace;
+        color: #000;
+        font-size: x-large;
+        font-weight: bolder;
+        margin-bottom: 10px;
+      }
+
+      .album-description h4 {
+        font-family: cursive;
+        color: #000;
+        font-size: small;
+        font-weight: lighter;
+      }
+
+      .album-description p {
+        font-family: monospace;
+        color: #000;
+        font-size: normal;
+        font-weight: bold;
+        margin-bottom: 60px;
+      }
+
+      .album-cover > img {
+        margin-top: 17px;
+      }
+
+      time {
+        color: grey;
+      }
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="left">
+    <div class="photo"></div>
+    <div class="profile">
+      <h3 class="name">Jay Chou</h3>
+      <p class="story">Popular Music Singer, Musician, Director and Actor</p>
+    </div>
+    <div class="slag">
+      <ul class="list">
+        <li>
+          <a href="#">
+            <span class="iconfont icon-home"></span>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="https://www.baidu.com/link?url=YtN2Yc8Vp-pSIbO7hhlsDAq4YPzXjIOfKspXQadLPy8yYtUKOeDOMRo1yjoivwb6vESIBh0g5kDCf3p4rfl8bNYkBdIv3z1g6zy4rofMgCRqiX-D8u_Q0LKlKgghg1Rw&wd=&eqid=a09470dd0002927a000000025dd64909">
+            <span class="iconfont icon-tag-o"></span>
+            Categories
+          </a>
+        </li>  
+        <li>
+          <a href="https://www.baidu.com/link?url=YtN2Yc8Vp-pSIbO7hhlsDAq4YPzXjIOfKspXQadLPy8yYtUKOeDOMRo1yjoivwb6vESIBh0g5kDCf3p4rfl8bNYkBdIv3z1g6zy4rofMgCRqiX-D8u_Q0LKlKgghg1Rw&wd=&eqid=a09470dd0002927a000000025dd64909">
+            <span class="iconfont icon-cc-tag-more"></span>
+            Tags
+          </a>
+        </li>   
+        <li>
+          <a href="http://ustbhuangyi.com/music/#/singer/0025NhlN2yWrP4">
+            <span class="iconfont icon-list_calender"></span>
+            Archives
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="iconfont icon-search"></span>
+            Search
+          </a>
+        </li>
+        <li>
+          <a href="http://ustbhuangyi.com/music/#/singer/0025NhlN2yWrP4">
+            <span class="iconfont icon-QA"></span>
+            About
+          </a>
+        </li>
+      </ul>
+      <ul class="list-right">
+        <li>
+          <a href="#" style="vertical-align:10px;">
+            <span class="iconfont icon-address"></span>
+            Address
+          </a>
+        </li>
+        <li>
+          <a href="https://www.baidu.com/link?url=YtN2Yc8Vp-pSIbO7hhlsDAq4YPzXjIOfKspXQadLPy8yYtUKOeDOMRo1yjoivwb6vESIBh0g5kDCf3p4rfl8bNYkBdIv3z1g6zy4rofMgCRqiX-D8u_Q0LKlKgghg1Rw&wd=&eqid=a09470dd0002927a000000025dd64909">
+            <span class="iconfont icon-stack-overflow-fill"></span>
+            Overflow
+          </a>
+        </li>    
+        <li>
+          <a href="http://ustbhuangyi.com/music/#/singer/0025NhlN2yWrP4">
+            <span class="iconfont icon-github"></span>
+            Github
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="iconfont icon-iconset0359"></span>
+            Twitter
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="right">
+      <div style="margin:20px; padding: 0 0 20px; border-bottom: 2px solid rgba(144, 144, 144, 0.2);">
+          <div>
+              <h1 style="margin-bottom :0;  font-family: arial;"> Welcome to Jay Chou</h1>
+          </div>
+          <div>
+              <time>18 January, 1979 in Taiwan, genius</time>
+          </div>
+          <div style="margin-bottom:20px">
+              <p style="word-break:break-all;color:#2f2f4f;font-family:centaur"> 
+                Jay Chou, born on January 18, 1979 in Xinbei City, Taiwan Province, 
+                graduated from Danjiang middle school, male singer, musician, actor, 
+                director, screenwriter, etc. of Taiwan pop music in China.
+              </p>
+          </div>
+          <div>
+              <a href="./card2.html">Continue reading</a>
+              <img style=" margin-top:20px; max-width:100%;"  src="../static/img/city.jpg"  alt="city.jpg" align="TextTop"/>
+          </div>
+      </div>
+      <div class="album" >
+        <div class="album-cover">
+          <img src="../static/img/cover1.jpg" alt="魔杰座" width="200" height="150">
+        </div>
+        <div class="album-description">
+          <h3>Magic Jiezuo</h3>
+          <time>22 November, 2019 in Xi'an, features</time>
+          <p>
+            "Magic Jiezuo" is an album released by Jay Chou in 2008. The composers include Jay Chou, 
+            Fang Wenshan, Huang Junlang, etc.
+          </p>
+          <a href="./card2.html">
+          Continue  reading
+          </a>
+        </div>
+      </div>
+      <div class="album">
+        <div class="album-cover">
+          <img src="../static/img/cover2.jpg" alt="七里香" width="200" height="150">
+        </div>
+        <div class="album-description">
+            <h3>Seven Feets Soundly</h3>
+            <time>22 November, 2019 in Xi'an, features</time>
+            <p>
+              "Qilixiang" is an album released by Jay Chou on August 3, 2004. 
+              Jay Chou is the producer of the album, which includes 10 songs.
+            </p>
+            <a href="./card2.html">
+            Continue  reading
+            </a>
+          </div>
+      </div>
+      <div class="album">
+        <div class="album-cover">
+            <img src="../static/img/cover3.jpg" alt="十一月的肖邦" width="200" height="150">
+        </div>
+        <div class="album-description">
+            <h3>November's Chopin</h3>
+            <time>22 November, 2019 in Xi'an, features</time>
+            <p>
+              "November's Chopin" is a music album released by Jay Chou on November 1, 2005. 
+              It contains 12 songs. Jay Chou is the producer of the album.
+            </p>
+            <a href="./card2.html">
+            Continue  reading
+            </a>
+        </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
