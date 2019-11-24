@@ -21,6 +21,7 @@ body {
     width: 350px;
     height: 300px;
     position: absolute;
+    overflow: hidden;
     left: 50%;
     margin-left: -175px;
     top: 50%;
@@ -28,8 +29,6 @@ body {
     z-index: 10;
     background-color:white;
     border-radius: 3%;
-
-    position: absolute;
     animation:bounceInDown 2s ;
     -webkit-animation:bounceInDown 2s ;
   }
