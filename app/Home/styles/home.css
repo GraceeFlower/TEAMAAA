@@ -1,90 +1,98 @@
 body {
+  margin: 0; 
+  padding: 0; 
+}
 
-    margin: 0; 
-    padding: 0; 
+.wrapper {
+  overflow: hidden;
 }
 
 .home-navi {
-    top: 7%;
-    position: fixed;
-    z-index: 10;
+  top: 7%;
+  position: fixed;
+  z-index: 10;
 }
+
+.small-home-navi {
+  display: none;
+}
+
 .home-category {
-    background-image: url(../static/img/city.jpg);
-    position: fixed;
-    width: 35%;
-    height: 100%;
-    background-size: cover;
-    filter: blur(3px)
+  background-image: url(../static/img/city.jpg);
+  position: fixed;
+  width: 35%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(3px)
 }
 
 .home-content {
-    float:right;
-    width:65%;
-    height:100%;
-    background-color:white;
+  float:right;
+  width:65%;
+  height:100%;
+  background-color:white;
 }
 
 .home-content a {
-    text-decoration-line: none;
-    color: #15adf3;
+  text-decoration-line: none;
+  color: #15adf3;
 }
 
 .home-profile-photo {
-    border: 1px solid #fff;
-    background-image: url(../static/img/profile.jpg);
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position:relative;
-    top: 20%;
-    margin: auto;
-    background-size: contain;
+  border: 1px solid #fff;
+  background-image: url(../static/img/profile.jpg);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position:relative;
+  top: 20%;
+  margin: auto;
+  background-size: contain;
 }
 
 .home-profile-info {
-    text-align: center;
-    margin: 40px 0 18px 0;    
-    }
+  text-align: center;
+  margin: 40px 0 18px 0;    
+}
 
 .home-profile-name {
-    text-align: center;
-    color:white;
-    font-family: fantasy;
-    font-size: normal;
+  text-align: center;
+  color:white;
+  font-family: fantasy;
+  font-size: normal;
 }
 
 .home-profile-story {
-    color:whitesmoke;
-    font-family: monospace;
-    font-weight: lighter;
-    font-size: medium;
-    margin: 0 50px;
+  color:whitesmoke;
+  font-family: monospace;
+  font-weight: lighter;
+  font-size: medium;
+  margin: 0 50px;
 }
 
 .home-category-slag {
-    margin: 0 30px;
+  margin: 0 30px;
 }
 
 .home-category-leftlist li, .home-category-rightlist li {
-    height: 30px;
-    line-height: 30px;
-    list-style: none;
-    margin: 16px 20px;
+  height: 30px;
+  line-height: 30px;
+  list-style: none;
+  margin: 16px 20px;
 }
 
 .home-category-leftlist li a:hover, .home-category-rightlist li a:hover {
-    color: #000;
+  color: #000;
 }
 
 .home-category-leftlist li > a > span {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .home-category-leftlist  a, .home-category-rightlist a {
-    text-decoration-line: none;
-    color:white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration-line: none;
+  color:white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .home-category-leftlist {
@@ -153,19 +161,12 @@ body {
     margin-bottom: 10px;
 }
 
-.album-desc h4 {
-    font-family: cursive;
-    color: #000;
-    font-size: small;
-    font-weight: lighter;
-}
-
 .album-desc p {
     font-family: monospace;
     color: #000;
-    font-size: normal;
+    font-size: 14px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
 }
 
 .album-cover > img {
@@ -174,6 +175,60 @@ body {
 
 time {
     color: grey;
+}
+
+@media screen and (max-width: 1000px) {
+    .home-navi {
+      display:none;
+    }
+
+    .home-category {
+      width: 80px;
+    }
+
+    .home-content {
+      width: calc(100% - 80px);
+    }
+
+    .small-home-navi {
+        min-width: 80px;
+        position: absolute;
+        z-index: 10;
+        display: inline-block;
+        width: 80px;
+        text-align: center;
+    }
+
+    .small-home-navi .home-profile-photo {
+        width: 50px;
+        height: 50px;
+        margin-top: 20px;
+        border: none;
+    }
+
+    .small-home-navi .home-category-slag ul {
+        padding-left: 0;
+    }
+
+    .small-home-navi .home-category-slag ul li {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+        margin: 25px 0;
+    }
+
+    .small-home-navi .home-category-slag ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .small-home-navi .home-category-slag ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .small-home-navi .home-category-slag ul li a span {
+        font-size: 22px;
+    }
 }
 
 

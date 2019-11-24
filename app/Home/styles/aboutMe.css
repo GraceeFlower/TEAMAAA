@@ -27,6 +27,7 @@ body {
     margin-top: -150px;
     z-index: 10;
     background-color:white;
+    border-radius: 3%;
 
     position: absolute;
     animation:bounceInDown 2s ;
@@ -35,7 +36,8 @@ body {
 
   .icon-guanbi {
     position: absolute;
-    right: 0;
+    right: 3px;
+    top: 3px;
   }
 
   .photo {
