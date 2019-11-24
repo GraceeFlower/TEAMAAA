@@ -71,7 +71,7 @@ body {
 
   .tl {
     float: left;
-    width: 50%;
+    width: 60%;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -79,7 +79,7 @@ body {
 
   .address {
     float: right;
-    width: 50%;
+    width: 40%;
     text-align: center;
     margin: 0;
     padding: 0;
