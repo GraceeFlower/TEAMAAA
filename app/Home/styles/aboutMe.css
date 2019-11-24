@@ -6,7 +6,7 @@ body {
   .whole-bkg {
     padding: 0;
     margin: 0;
-    background-image: url(../static/img/city.jpg);
+    background-image: url(../static/img/timgES9KET2X.jpg);
     position: absolute;
     background-size: cover;
     width: 100%;
@@ -105,8 +105,8 @@ body {
   #close-button:checked~#card-show-l
   {
 
-      animation:mymove 2s ;
-      -webkit-animation:mymove 2s ;
+    animation:mymove 2s ;
+    -webkit-animation:mymove 2s ;
   }
 
   @keyframes bounceInDown {
