@@ -90,13 +90,19 @@ body {
 
 .tl-title {
   color: #42d9e4;
-  font-size: 1rem;
+  font-family: fantasy;
+  font-size: 1.2rem;
   text-decoration-line: none;
 }
 
 .tl-content {
   color: #fff;
   padding-bottom: 50px;
+}
+
+.tl-content p {
+  font-family: fantasy;
+  font-size: smaller;
 }
 
 .tl-info, .tl-content {
