@@ -4,174 +4,19 @@
     <meta charset="UTF-8">
     <title>Jay</title>
     <link rel="stylesheet" href="../styles/iconfont.css">
-    <style>
-      body {
-        margin: 0;
-        padding: 0; 
-      }
-
-      .left {
-        background-image: url(../static/img/cover.jpg);
-        position: fixed;
-        width: 35%;
-        height: 100%;
-        background-size: cover
-      }
-
-      .right {
-        float:right;
-        width:65%;
-        height:100%;
-        background-color:white;
-      }
-
-      .right a {
-        text-decoration-line: none;
-        color: #15adf3;
-      }
-
-      .photo {
-        border: 1px solid #fff;
-        background-image: url(../static/img/profile.jpg);
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        position:relative;
-        top: 10%;
-        margin: auto;
-        background-size: contain;
-      }
-
-      .profile {
-        text-align: center;
-        margin: 80px 0 18px 0;    
-      }
-
-      .name {
-        text-align: center;
-        color:white;
-        font-family: fantasy;
-        font-size: normal;
-      }
-
-      .story {
-        color:whitesmoke;
-        font-family: monospace;
-        font-weight: lighter;
-        font-size: medium;
-        margin: 0 50px;
-      }
-
-      .slag {
-        margin: 0 30px;
-      }
-
-      .list li, .list-right li {
-        height: 30px;
-        line-height: 30px;
-        list-style: none;
-        margin: 16px 20px;
-      }
-
-      .list li a:hover, .list-right li a:hover {
-        color: #000;
-      }
-
-      .list li > a > span {
-        margin-right: 8px;
-      }
-
-      .list a, .list-right a {
-        text-decoration-line: none;
-        color:white;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-      }
-
-      .list {
-        display: inline-block;
-        padding: 0 0 0 30px; 
-      }
-
-      .list-right {
-        float: right;
-        display: inline-block;
-        padding: 0 30px 0 0;
-      }
-
-      .album {
-        height: 200px;
-        border-bottom: 2px solid rgba(144, 144, 144, 0.2);
-        margin: 20px;
-      }
-
-      .album-cover {
-        float: left;
-        width: 35%;
-        height: 100%;
-        text-align: center;
-        
-      }
-      .album-cover img {
-        opacity: .7;
-        filter: blur(3px);
-      }
-
-      .album:hover .album-cover img {
-        opacity: 1;
-        filter: blur(0px);
-      }
-
-
-      .album-desc {
-        float: right;
-        width: 65%;
-        height: 100%;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .album-desc h3 {
-        font-family: monospace;
-        color: #000;
-        font-size: x-large;
-        font-weight: bolder;
-        margin-bottom: 10px;
-      }
-
-      .album-desc h4 {
-        font-family: cursive;
-        color: #000;
-        font-size: small;
-        font-weight: lighter;
-      }
-
-      .album-desc p {
-        font-family: monospace;
-        color: #000;
-        font-size: normal;
-        font-weight: bold;
-        margin-bottom: 35px;
-      }
-
-      .album-cover > img {
-        margin-top: 17px;
-      }
-
-      time {
-        color: grey;
-      }
-
-    </style>
+    <link rel="stylesheet" href="../styles/home.css">
 </head>
 <body>
 <div class="wrapper">
-  <div class="left">
-    <div class="photo"></div>
-    <div class="profile">
-      <h3 class="name">Jay Chou</h3>
-      <p class="story">Popular Music Singer, Musician, Director and Actor</p>
+  <div class="home-category"></div>
+  <div class="home-navi">
+    <div class="home-profile-photo"></div>
+    <div class="home-profile-info">
+      <h3 class="home-profile-name">Jay Chou</h3>
+      <p class="home-profile-story">Popular Music Singer, Musician, Director and Actor</p>
     </div>
-    <div class="slag">
-      <ul class="list">
+    <div class="home-category-slag">
+      <ul class="home-category-leftlist">
         <li>
           <a href="#">
             <span class="iconfont icon-home"></span>
@@ -203,13 +48,14 @@
           </a>
         </li>
         <li>
-          <a href="http://ustbhuangyi.com/music/#/singer/0025NhlN2yWrP4">
+          <a href="./aboutMe.html">
             <span class="iconfont icon-QA"></span>
             About
           </a>
         </li>
       </ul>
-      <ul class="list-right">
+
+      <ul class="home-category-rightlist">
         <li>
           <a href="#" style="vertical-align:10px;">
             <span class="iconfont icon-address"></span>
@@ -237,25 +83,83 @@
       </ul>
     </div>
   </div>
-  <div class="right">
-      <div style="margin:20px; padding: 0 0 20px; border-bottom: 2px solid rgba(144, 144, 144, 0.2);">
+  <div class="small-home-navi">
+    <div class="home-profile-photo"></div>
+    <div class="home-category-slag">
+      <ul class="home-category-list">
+        <li>
+          <a href="#">
+            <span class="iconfont icon-home"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.baidu.com/link?url=YtN2Yc8Vp-pSIbO7hhlsDAq4YPzXjIOfKspXQadLPy8yYtUKOeDOMRo1yjoivwb6vESIBh0g5kDCf3p4rfl8bNYkBdIv3z1g6zy4rofMgCRqiX-D8u_Q0LKlKgghg1Rw&wd=&eqid=a09470dd0002927a000000025dd64909">
+            <span class="iconfont icon-tag-o"></span>
+          </a>
+        </li>  
+        <li>
+          <a href="https://www.baidu.com/link?url=YtN2Yc8Vp-pSIbO7hhlsDAq4YPzXjIOfKspXQadLPy8yYtUKOeDOMRo1yjoivwb6vESIBh0g5kDCf3p4rfl8bNYkBdIv3z1g6zy4rofMgCRqiX-D8u_Q0LKlKgghg1Rw&wd=&eqid=a09470dd0002927a000000025dd64909">
+            <span class="iconfont icon-cc-tag-more"></span>
+          </a>
+        </li>   
+        <li>
+          <a href="http://ustbhuangyi.com/music/#/singer/0025NhlN2yWrP4">
+            <span class="iconfont icon-list_calender"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="iconfont icon-search"></span>
+          </a>
+        </li>
+        <li>
+          <a href="./aboutMe.html">
+            <span class="iconfont icon-QA"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#" style="vertical-align:10px;">
+            <span class="iconfont icon-address"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.baidu.com/link?url=YtN2Yc8Vp-pSIbO7hhlsDAq4YPzXjIOfKspXQadLPy8yYtUKOeDOMRo1yjoivwb6vESIBh0g5kDCf3p4rfl8bNYkBdIv3z1g6zy4rofMgCRqiX-D8u_Q0LKlKgghg1Rw&wd=&eqid=a09470dd0002927a000000025dd64909">
+            <span class="iconfont icon-stack-overflow-fill"></span>
+          </a>
+        </li>    
+        <li>
+          <a href="http://ustbhuangyi.com/music/#/singer/0025NhlN2yWrP4">
+            <span class="iconfont icon-github"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="iconfont icon-iconset0359"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="home-content">
+      <div class = "home-headline">
           <div>
-              <h1 style="margin-bottom :0;  font-family: arial;"> Welcome to Jay Chou</h1>
+              <h1 class = "home-headline-title"> Welcome to Jay Chou</h1>
           </div>
           <div>
               <time>18 January, 1979 in Taiwan, genius</time>
           </div>
-          <div style="margin-bottom:20px">
-              <p style="word-break:break-all;color:#2f2f4f;font-family:centaur"> 
+          <div class = "home-headline-content">
+              <p style=> 
                 Jay Chou, born on January 18, 1979 in Xinbei City, Taiwan Province, 
                 graduated from Danjiang middle school, male singer, musician, actor, 
                 director, screenwriter, etc. of Taiwan pop music in China.</p>
           </div>
           <div>
-              <a href="./card2.html">Continue reading</a>
-              <img style=" margin-top:20px; max-width:100%;"  src="../static/img/city.jpg"  alt="city.jpg" align="TextTop"/>
+              <a class = "home-headline-link" href="./detail.html">Continue reading</a>
+              <img class = "home-headline-image"  src="../static/img/city.jpg"  alt="city.jpg" align="TextTop"/>
           </div>
       </div>
+
       <div class="album" >
         <div class="album-cover">
           <img src="../static/img/cover1.jpg" alt="魔杰座" width="70%" height="150">
@@ -267,8 +171,8 @@
             "Magic Jiezuo" is an album released by Jay Chou in 2008. The composers include Jay Chou, 
             Fang Wenshan, Huang Junlang, etc.
           </p>
-          <a href="./card2.html">
-            Continue  reading
+          <a href="./detail.html">
+          Continue  reading
           </a>
         </div>
       </div>
@@ -283,7 +187,7 @@
               "Qilixiang" is an album released by Jay Chou on August 3, 2004. 
               Jay Chou is the producer of the album, which includes 10 songs.
             </p>
-            <a href="./card2.html">
+            <a href="./detail.html">
             Continue  reading
             </a>
           </div>
@@ -299,14 +203,13 @@
               "November's Chopin" is a music album released by Jay Chou on November 1, 2005. 
               It contains 12 songs. Jay Chou is the producer of the album.
             </p>
-            <a href="./card2.html">
+            <a href="./detail.html">
             Continue  reading
             </a>
         </div>
       </div>
   </div>
+  </div>
 </div>
 </body>
-<!-- 园游会在这里哦，下面这行代码注释掉就ok  ^_^-->
-<iframe id="music" src= "http://aqqmusic.tc.qq.com/amobile.music.tc.qq.com/C400002smLy40ZZpNm.m4a?guid=500204211&vkey=6F5F4B05A14D2F4CBEB3AB59C2038F721A42D9BE554947388CFC6749561F5F411C84BC61B4E5C08BF6DC59EC3E0C46D2C858017EDCDD5A35&uin=0&fromtag=38" allow = "autoplay"/>
 </html>
