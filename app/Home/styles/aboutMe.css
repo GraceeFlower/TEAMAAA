@@ -71,7 +71,7 @@ body {
 
   .tl {
     float: left;
-    width: 70%;
+    width: 50%;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -79,7 +79,7 @@ body {
 
   .address {
     float: right;
-    width: 30%;
+    width: 50%;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -88,8 +88,6 @@ body {
   .tl a, .address a {
     text-decoration: none;
   }
-
-
 
   #close-button-l {
     position: absolute;
@@ -111,18 +109,6 @@ body {
       -webkit-animation:mymove 2s ;
   }
 
-  @keyframes mymove
-  {
-    from {top:-1000px;}
-    to {top:50%;}
-  }
-  
-  @-webkit-keyframes mymove 
-  {
-    from {top:-1000px;}
-    to {top:130%;}
-  }
-  
   @keyframes bounceInDown {
       from,
       60%,
@@ -160,12 +146,12 @@ body {
         transform: translate3d(0, 0, 0);
       }
     }
-  .bounceInDown {
+    .bounceInDown {
       -webkit-animation-name: bounceInDown;
       animation-name: bounceInDown;
     }
     
-    @-webkit-keyframes bounceInLeft {
+    @-webkit-keyframes bounceInDown {
       from,
       60%,
       75%,
